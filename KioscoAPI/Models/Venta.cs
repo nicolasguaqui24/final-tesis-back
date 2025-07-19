@@ -27,6 +27,8 @@ namespace KioscoAPI.Models
         // Colección de detalles de venta
         public ICollection<DetalleVenta> DetalleVenta { get; set; } = new List<DetalleVenta>();
         public ICollection<PagoFiado> PagosFiado { get; set; } = new List<PagoFiado>();
+        public Ticket Ticket { get; set; } // Relación 1 a 1 con Ticket
+
 
 
 

@@ -1,4 +1,7 @@
-﻿namespace KioscoAPI.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+
+namespace KioscoAPI.Models
 {
     public class DetalleVenta
     {
@@ -10,7 +13,7 @@
         // FK a producto 
         public int id_producto { get; set; }
         [ForeignKey("id_producto")]
-        public Productos Producto { get; set; }
+        public Producto Producto { get; set; }
 
         // FK a venta
         public int id_venta { get; set; }

@@ -8,165 +8,92 @@ namespace KioscoAPI.Data
         public KioscoDbContext(DbContextOptions<KioscoDbContext> options)
             : base(options) { }
 
-        public DbSet<Proveedore> Proveedores { get; set; }
-        public DbSet<Venta> Ventas { get; set; }
-        public DbSet<CajaMovimiento> CajaMovimientos { get; set; }
-        public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<Producto> Productos { get; set; }
-        public DbSet<DetalleVenta> DetalleVentas { get; set; }
-        public DbSet<PagoFiado> PagosFiados { get; set; }
-        public DbSet<MovimientoStock> MovimientoStock { get; set; }
-        public DbSet<PrecioProducto> PrecioProducto { get; set; }
         public DbSet<Permiso> Permisos { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Producto> Productos { get; set; }
+        public DbSet<Proveedore> Proveedores { get; set; }
+        public DbSet<PrecioProducto> PreciosProducto { get; set; }
+        public DbSet<MovimientoStock> MovimientosStock { get; set; }
+        public DbSet<MovimientoInterno> MovimientosInternos { get; set; }
+        public DbSet<CajaMovimiento> CajaMovimientos { get; set; }
+        public DbSet<Venta> Ventas { get; set; }
+        public DbSet<DetalleVenta> DetallesVenta { get; set; }
+        public DbSet<PagoFiado> PagosFiado { get; set; }
+        public DbSet<Ticket> Tickets { get; set; }
 
-        /* protected override void OnModelCreating(ModelBuilder modelBuilder)
-         {
-             base.OnModelCreating(modelBuilder);
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
 
-             // ▓▓▓ Permisos: clave compuesta
-             modelBuilder.Entity<Permiso>(entity =>
-             {
-                 entity.ToTable("Permisos");
-                 entity.HasKey(p => new { p.id_usuario, p.acceso });
-                 entity.Property(p => p.acceso).HasMaxLength(100);
+            // === USUARIO ===
+            modelBuilder.Entity<Usuario>(entity =>
+            {
+                entity.HasIndex(u => u.usuario).IsUnique(); // Usuario único
+                entity.Property(u => u.usuario).HasColumnName("usuario");
+            });
 
-                 entity.HasOne(p => p.Usuario)
-                       .WithMany(u => u.Permisos)
-                       .HasForeignKey(p => p.id_usuario)
-                       .OnDelete(DeleteBehavior.Cascade);
-             });
+            // === VENTA-TICKET: Relación 1 a 1 ===
+            modelBuilder.Entity<Venta>()
+                .HasOne(v => v.Ticket)
+                .WithOne(t => t.Venta)
+                .HasForeignKey<Ticket>(t => t.id_venta)
+                .OnDelete(DeleteBehavior.Restrict); // Evita borrado en cascada
 
-             // ▓▓▓ Venta
-             modelBuilder.Entity<Venta>(entity =>
-             {
-                 entity.ToTable("Ventas");
-                 entity.HasKey(v => v.id);
+            // === PRODUCTO - CATEGORIA / PROVEEDOR ===
+            modelBuilder.Entity<Producto>()
+                .HasOne(p => p.Categoria)
+                .WithMany(c => c.Producto)
+                .HasForeignKey(p => p.id_categoria)
+                .OnDelete(DeleteBehavior.Restrict);
 
-                 entity.HasOne(v => v.Cliente)
-                       .WithMany()
-                       .HasForeignKey(v => v.id_cliente)
-                       .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Producto>()
+                .HasOne(p => p.Proveedore)
+                .WithMany(pv => pv.Producto)
+                .HasForeignKey(p => p.id_proveedor)
+                .OnDelete(DeleteBehavior.Restrict);
 
-                 entity.HasOne(v => v.Vendedor)
-                       .WithMany(u => u.VentasRealizadas)
-                       .HasForeignKey(v => v.id_vendedor)
-                       .OnDelete(DeleteBehavior.Restrict);
-             });
+            // === PERMISO: Clave compuesta ===
+            modelBuilder.Entity<Permiso>(entity =>
+            {
+                entity.HasKey(p => new { p.id_usuario, p.acceso }); // clave compuesta
+                entity.Property(p => p.acceso).HasColumnName("acceso");
 
-             // ▓▓▓ DetalleVenta
-             modelBuilder.Entity<DetalleVenta>(entity =>
-             {
-                 entity.ToTable("DetalleVentas");
-                 entity.HasKey(d => d.id);
+                entity.HasOne(p => p.Usuario)
+                      .WithMany(u => u.Permisos)
+                      .HasForeignKey(p => p.id_usuario)
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
 
-                 entity.HasOne(d => d.Venta)
-                       .WithMany()
-                       .HasForeignKey(d => d.id_venta);
+            // === DETALLEVENTA: FK a Venta y Producto ===
+            modelBuilder.Entity<DetalleVenta>()
+                .HasOne(dv => dv.Venta)
+                .WithMany(v => v.DetalleVenta)
+                .HasForeignKey(dv => dv.id_venta)
+                .OnDelete(DeleteBehavior.Restrict);
 
-                 entity.HasOne(d => d.Producto)
-                       .WithMany()
-                       .HasForeignKey(d => d.id_producto);
-             });
+            modelBuilder.Entity<DetalleVenta>()
+                .HasOne(dv => dv.Producto)
+                .WithMany(p => p.DetalleVenta)
+                .HasForeignKey(dv => dv.id_producto)
+                .OnDelete(DeleteBehavior.Restrict);
 
-             // ▓▓▓ Producto
-             modelBuilder.Entity<Producto>(entity =>
-             {
-                 entity.ToTable("Productos");
-                 entity.HasKey(p => p.id);
+            // === PAGO FIADO: FK a Cliente y Venta ===
+            modelBuilder.Entity<PagoFiado>()
+                .HasOne(pf => pf.Cliente)
+                .WithMany(c => c.PagosFiado)
+                .HasForeignKey(pf => pf.id_cliente)
+                .OnDelete(DeleteBehavior.Restrict);
 
-                 entity.HasOne(p => p.Categoria)
-                       .WithMany()
-                       .HasForeignKey(p => p.id_categoria);
+            modelBuilder.Entity<PagoFiado>()
+                .HasOne(pf => pf.Venta)
+                .WithMany(v => v.PagosFiado)
+                .HasForeignKey(pf => pf.id_venta)
+                .OnDelete(DeleteBehavior.Restrict);
+        }
 
-                 entity.HasOne(p => p.Proveedor)
-                       .WithMany()
-                       .HasForeignKey(p => p.id_proveedor);
-             });
-
-             // ▓▓▓ Cliente
-             modelBuilder.Entity<Cliente>(entity =>
-             {
-                 entity.ToTable("Clientes");
-                 entity.HasKey(c => c.id);
-             });
-
-             // ▓▓▓ Usuario
-             modelBuilder.Entity<Usuario>(entity =>
-             {
-                 entity.ToTable("Usuarios");
-                 entity.HasKey(u => u.id);
-             });
-
-             // ▓▓▓ Categorias
-             modelBuilder.Entity<Categoria>(entity =>
-             {
-                 entity.ToTable("Categorias");
-                 entity.HasKey(c => c.id);
-             });
-
-             // ▓▓▓ Proveedor
-             modelBuilder.Entity<Proveedor>(entity =>
-             {
-                 entity.ToTable("Proveedores");
-                 entity.HasKey(p => p.id);
-             });
-
-             // ▓▓▓ MovimientoStock
-             modelBuilder.Entity<MovimientoStock>(entity =>
-             {
-                 entity.ToTable("MovimientoStock");
-                 entity.HasKey(m => m.id);
-
-                 entity.HasOne(m => m.Producto)
-                       .WithMany()
-                       .HasForeignKey(m => m.id_producto);
-
-                 entity.HasOne(m => m.Usuario)
-                       .WithMany()
-                       .HasForeignKey(m => m.id_usuario);
-             });
-
-             // ▓▓▓ PrecioProducto
-             modelBuilder.Entity<PrecioProducto>(entity =>
-             {
-                 entity.ToTable("PrecioProducto");
-                 entity.HasKey(p => p.id);
-
-                 entity.HasOne(p => p.Producto)
-                       .WithMany()
-                       .HasForeignKey(p => p.id_producto);
-             });
-
-             // ▓▓▓ CajaMovimiento
-             modelBuilder.Entity<CajaMovimiento>(entity =>
-             {
-                 entity.ToTable("CajaMovimientos");
-                 entity.HasKey(c => c.id);
-
-                 entity.HasOne(c => c.Usuario)
-                       .WithMany()
-                       .HasForeignKey(c => c.id_usuario);
-             });
-
-             // ▓▓▓ PagoFiado
-             modelBuilder.Entity<PagoFiado>(entity =>
-             {
-                 entity.ToTable("PagosFiados");
-                 entity.HasKey(p => p.id);
-
-                 entity.HasOne(p => p.Cliente)
-                       .WithMany()
-                       .HasForeignKey(p => p.id_cliente);
-
-                 entity.HasOne(p => p.Venta)
-                       .WithMany()
-                       .HasForeignKey(p => p.id_venta);
-             });
-
-         }
-        */
-     }
-        
     }
+    }
+     
+    

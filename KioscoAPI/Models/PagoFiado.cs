@@ -1,10 +1,13 @@
-﻿namespace KioscoAPI.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace KioscoAPI.Models
+
 {
     public class PagoFiado
     {
         public int id{get; set;}
         public decimal monto{get; set;}
-        public date fecha_pago{get; set;}
+        public DateTime fecha_pago{get; set;}
 
 
         // FK a Venta

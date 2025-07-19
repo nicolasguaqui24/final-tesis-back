@@ -1,21 +1,19 @@
-﻿namespace KioscoAPI.Models
+﻿
+namespace KioscoAPI.Models
 {
     public class Proveedore
     {
     public int id{get; set;}
     public string nombre {get; set;}
     public string telefono {get; set;}
-    public int CBU {get; set;}   
+    public string CBU {get; set;}   
     public int deuda {get; set;}
     public string email { get; set; }
     public string direccion { get; set; }
     public bool activo { get; set; }
     public string? observaciones { get; set; }
 
-        // FK a Producto
-        public int id_producto { get; set; }
-        [ForeignKey("id_producto")]
-        public Producto Producto { get; set; }
+    
 
 
         public ICollection<Producto> Producto { get; set; } = new List<Producto>(); // Colección de productos asociados al proveedor

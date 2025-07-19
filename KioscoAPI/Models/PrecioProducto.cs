@@ -1,4 +1,6 @@
-﻿namespace KioscoAPI.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace KioscoAPI.Models
 {
     public class PrecioProducto
     {

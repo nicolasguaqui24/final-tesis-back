@@ -1,0 +1,233 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KioscoAPI\\Models\\Usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Pagos_Fiado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KioscoAPI\\Models\\Pagos_Fiado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Caja_movimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KioscoAPI\\Models\\Caja_movimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\DetalleVentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KioscoAPI\\Models\\DetalleVentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\MovimientosStock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KioscoAPI\\Models\\MovimientosStock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KioscoAPI\\Models\\Productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KioscoAPI\\Models\\Categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KioscoAPI\\Models\\Clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KioscoAPI\\Models\\Proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\PrecioProducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KioscoAPI\\Models\\PrecioProducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\KioscoAPI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KioscoAPI\\KioscoAPI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 383,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pagos_Fiado.cs",
+              "DocumentMoniker": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Pagos_Fiado.cs",
+              "RelativeDocumentMoniker": "KioscoAPI\\Models\\Pagos_Fiado.cs",
+              "ToolTip": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Pagos_Fiado.cs",
+              "RelativeToolTip": "KioscoAPI\\Models\\Pagos_Fiado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T23:20:08.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Caja_movimientos.cs",
+              "DocumentMoniker": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Caja_movimientos.cs",
+              "RelativeDocumentMoniker": "KioscoAPI\\Models\\Caja_movimientos.cs",
+              "ToolTip": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Caja_movimientos.cs",
+              "RelativeToolTip": "KioscoAPI\\Models\\Caja_movimientos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T23:19:57.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetalleVentas.cs",
+              "DocumentMoniker": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\DetalleVentas.cs",
+              "RelativeDocumentMoniker": "KioscoAPI\\Models\\DetalleVentas.cs",
+              "ToolTip": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\DetalleVentas.cs",
+              "RelativeToolTip": "KioscoAPI\\Models\\DetalleVentas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T23:19:41.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MovimientosStock.cs",
+              "DocumentMoniker": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\MovimientosStock.cs",
+              "RelativeDocumentMoniker": "KioscoAPI\\Models\\MovimientosStock.cs",
+              "ToolTip": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\MovimientosStock.cs",
+              "RelativeToolTip": "KioscoAPI\\Models\\MovimientosStock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T23:19:20.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PrecioProducto.cs",
+              "DocumentMoniker": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\PrecioProducto.cs",
+              "RelativeDocumentMoniker": "KioscoAPI\\Models\\PrecioProducto.cs",
+              "ToolTip": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\PrecioProducto.cs",
+              "RelativeToolTip": "KioscoAPI\\Models\\PrecioProducto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T23:19:10.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Productos.cs",
+              "DocumentMoniker": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Productos.cs",
+              "RelativeDocumentMoniker": "KioscoAPI\\Models\\Productos.cs",
+              "ToolTip": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Productos.cs",
+              "RelativeToolTip": "KioscoAPI\\Models\\Productos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T23:18:50.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Categorias.cs",
+              "DocumentMoniker": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Categorias.cs",
+              "RelativeDocumentMoniker": "KioscoAPI\\Models\\Categorias.cs",
+              "ToolTip": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Categorias.cs",
+              "RelativeToolTip": "KioscoAPI\\Models\\Categorias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T23:18:33.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Usuarios.cs",
+              "RelativeDocumentMoniker": "KioscoAPI\\Models\\Usuarios.cs",
+              "ToolTip": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Usuarios.cs",
+              "RelativeToolTip": "KioscoAPI\\Models\\Usuarios.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T23:17:53.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Clientes.cs",
+              "RelativeDocumentMoniker": "KioscoAPI\\Models\\Clientes.cs",
+              "ToolTip": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Clientes.cs",
+              "RelativeToolTip": "KioscoAPI\\Models\\Clientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T23:17:44.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Proveedores.cs",
+              "DocumentMoniker": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Proveedores.cs",
+              "RelativeDocumentMoniker": "KioscoAPI\\Models\\Proveedores.cs",
+              "ToolTip": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\Models\\Proveedores.cs",
+              "RelativeToolTip": "KioscoAPI\\Models\\Proveedores.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T23:17:11.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "KioscoAPI.csproj",
+              "DocumentMoniker": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\KioscoAPI.csproj",
+              "RelativeDocumentMoniker": "KioscoAPI\\KioscoAPI.csproj",
+              "ToolTip": "D:\\Users\\Usuario\\desktop\\Tesis facultad\\KioscoAPI\\KioscoAPI\\KioscoAPI.csproj",
+              "RelativeToolTip": "KioscoAPI\\KioscoAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-07T23:06:24.221Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 17,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
